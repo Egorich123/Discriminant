@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head lahg="rus">
+        <meta charset="utf-8">
+        <title>Дискриминант</title>
+    </head>
+    <body>
+        <script>
+            let a = parseInt(prompt('Введите коэффициент a'))
+            let b = parseInt(prompt('Введите коэффициент b'))
+            let c = parseInt(prompt('Введите коэффициент с'))
+            let D = (b * b) - 4 * a * c
+            if ( D > 0) {
+                alert('Найдено два решения')
+                let crd = Math.sqrt(D)
+                let x1 = ( -b - crd) / 2 * a
+                let x2 = ( -b + crd) / 2 * a
+                alert('x1 ='+ x1)
+                alert('x2 ='+ x2)
+            } 
+            else if ( D < 0) {
+                alert('Решений не найдено')
+            } 
+            if ( D = 0) {
+                alert('Найдено одно решение')
+                x1 = -b / 2 * a
+                alert('x1 ='+ x1)
+            }
+            
+        </script>
+    </body>
+</html>
